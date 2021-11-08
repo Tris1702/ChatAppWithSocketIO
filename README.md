@@ -12,5 +12,5 @@ node index.js
 ```groovy
 ngrok http 3000
 ```
-- Cop link tạo từ ngrok paste vào URL_BASE trong file Constant.kt
+- Cop link tạo từ ngrok paste vào URL_SERVER trong file Constant.kt
 - Chạy app và chat :) 
