@@ -3,7 +3,7 @@ Bài tập lớn môn Mạng máy tính về sử dụng socket trong giao tiế
 
 
 ## Cách dùng
-- Clone về mở file index trong package server trên terminal, chạy 
+- Clone về mở file index.js trong package server trên terminal, chạy 
 ```groovy
 node index.js
 ```
