@@ -4,26 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <EditText
-        android:id="@+id/edt_user_name"
-        android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/box_style">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_circle_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:hint="Enter your name"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
-    <Button
+        android:src="@drawable/ic_message"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/tinp_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Name"
+        app:startIconDrawable="@drawable/ic_user"
+        app:hintTextColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:helperText="Require"
+        app:counterEnabled="true"
+        app:helperTextTextColor="@color/red"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_enter_chat_room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/edt_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tinp_layout"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
-        android:text="Enter chat room"
+        android:layout_marginTop="30dp"
+        android:text="Enter"
+        android:textStyle="bold"
+        android:textColor="#3A4AC2"
+        android:padding="10dp"
+        android:background="@drawable/button_style"
+        android:visibility="gone"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

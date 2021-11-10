@@ -2,10 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle" >
 
-    <solid android:color="@color/black" />
-    <corners android:radius="5dp" />
-    <stroke
-        android:width="2dp"
-        android:color="@color/green_hacker" />
-
+    <solid android:color="#E45D9D" />
+    <corners android:radius="50dp" />
 </shape>

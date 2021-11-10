@@ -1,5 +1,6 @@
 package com.example.chatwithwebsocket
 
 object Constant {
-    val URL_SERVER = "http://192.168.21.113:3000"
+    val URL_SERVER = "https://e14b-58-186-64-189.ngrok.io"
+    var userName = ""
 }

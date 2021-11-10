@@ -43,6 +43,7 @@ class ChatRoomActivity : AppCompatActivity() {
                     if (edtMessage.text.isNotBlank()) {
                         Timber.d("Send message to server")
                         viewModel.sendMessageToServer(userName, edtMessage.text.toString())
+                        rcvChatArea.scrollToPosition(adapter.itemCount-1)
                         edtMessage.text = null
                     }
                 }
